@@ -67,11 +67,13 @@
 - (void)hk_expand {
     [self.hk_topBar hk_expand];
     [self.hk_bottomBar hk_expand];
+    [self hk_updateScrollViewInset];
 }
 
 - (void)hk_contract {
     [self.hk_topBar hk_contract];
     [self.hk_bottomBar hk_contract];
+    [self hk_updateScrollViewInset];
 }
 
 - (void)hk_setBarDidChangeStateBlock:(HKScrollingBarDidChangeBlock)block {
